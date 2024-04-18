@@ -31,8 +31,18 @@ tr:nth-child(odd) td {
   background-color: rgb(245, 245, 245);
 }
 
-tr *> {
-  background-color: yellow;
+tr>td:nth-of-type(1),
+#name {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+body>table:nth-child(1)>tbody:nth-child(3)>tr:nth-child(9)>td:nth-child(2) {
+  border-bottom: 2px solid black;
+}
+
+#name {
+  border-top: 2px solid black;
 }
 
 caption {
